@@ -95,6 +95,18 @@ int demNguyenTo(int x[100][100],int m, int n)
 	}
 	return dem;
 }
+
+void Sum(int a[100][100], int m, int n){
+    int tong=0;
+    //duyet hang cua ma tran
+    for(int i =0; i< m; i++){
+        //duyet cot cua ma tran
+        for(int j =0 ; j<n; j++){
+            tong += a[i][j];
+        }
+    }
+    printf("\nTong cac phan tu trong ma tran la: %d", tong);
+}
 //Ham main
 int main(){
 	nhapMaTran(a, m, n);
@@ -103,5 +115,5 @@ int main(){
 	printf("\nMax = %d", timMax(a, m, n));
 int dem = demNguyenTo(a, m, n); 
     printf("\nSo luong so nguyen to trong ma tran = %d", dem);
+    Sum(a,m,n);
 }
-
