@@ -114,12 +114,12 @@ void Xuatsv(SINHVIEN x)
 
 void XuatsvN(SINHVIEN a[],int n)
 {system("cls");
-printf("\n\n|---------------------------------------------------------------------------------------------\n");
-     printf("|Ma SV| Ho ten sinh vien | Phai | Nam sinh | Nganh hoc | KQ cuoi khoa | Xep loai | Que quan |");
+printf("\n\n|-------------------------------------------------------------------------------------------\n");
+     printf("|Ma SV| Ho ten sinh vien | Phai | Nam sinh | Nganh hoc |KQ cuoi khoa| Xep loai | Que quan |");
 
 for(int i=0;i<n;i++)
 {
-   printf("\n|-----|------------------|------|----------|-----------|--------------|----------|----------|\n");
+   printf("\n|-----|------------------|------|----------|-----------|------------|----------|----------|\n");
 Xuatsv(a[i]);
 }
 }
@@ -139,13 +139,13 @@ for(int i = 0;i<n;++i){
 
 void INGX(SINHVIEN a[], int n)
 {system("cls");
-printf("\n\n|---------------------------------------------------------------------------------------------\n");
-     printf("|Ma SV| Ho ten sinh vien | Phai | Nam sinh | Nganh hoc | KQ cuoi khoa | Xep loai | Que quan |");
+printf("\n\n|-------------------------------------------------------------------------------------------\n");
+     printf("|Ma SV| Ho ten sinh vien | Phai | Nam sinh | Nganh hoc |KQ cuoi khoa| Xep loai | Que quan |");
 
 for(int i=0;i<n;i++)
 { if(a[i].Kqcuoikhoa>=3.0)
     {
-   printf("\n|-----|------------------|------|----------|-----------|--------------|----------|----------|\n");
+   printf("\n|-----|------------------|------|----------|-----------|------------|----------|----------|\n");
     Xuatsv(a[i]);
     }
 }
@@ -159,16 +159,15 @@ char Matim[10];
 printf("\n Nhap ma sinh vien can tim: ");
 gets(Matim);
 
-printf("\n\n|---------------------------------------------------------------------------------------------\n");
-     printf("|Ma SV| Ho ten sinh vien | Phai | Nam sinh | Nganh hoc | KQ cuoi khoa | Xep loai | Que quan |");
+printf("\n\n|-------------------------------------------------------------------------------------------\n");
+     printf("|Ma SV| Ho ten sinh vien | Phai | Nam sinh | Nganh hoc |KQ cuoi khoa| Xep loai | Que quan |");
      
      for(int i=0;i<n;i++)
      { if(strcmp(a[i].Masv,Matim)==0)
         {
-   printf("\n|-----|------------------|------|----------|-----------|--------------|----------|----------|\n");  
+   printf("\n|-----|------------------|------|----------|-----------|------------|----------|----------|\n");  
    Xuatsv(a[i]);      	
         }
      }
 }
-
 
